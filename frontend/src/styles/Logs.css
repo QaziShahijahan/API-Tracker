@@ -1,0 +1,35 @@
+.logs-container {
+  display: flex;
+  background: linear-gradient(180deg, #0f1a3a, #081122);
+  min-height: 100vh;
+  color: white;
+}
+
+.logs-main {
+  flex: 1;
+  margin-left: 220px; /* Sidebar */
+  padding: 30px;
+}
+
+.logs-main h1 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.log-group {
+  margin-bottom: 30px;
+}
+
+.log-date {
+  font-size: 20px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 50px;
+}

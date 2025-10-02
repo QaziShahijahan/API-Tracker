@@ -1,0 +1,37 @@
+.home-container {
+  display: flex;
+  background: linear-gradient(180deg, #0f1a3a, #081122);
+  min-height: 100vh;
+  color: white;
+}
+
+.home-main {
+  flex: 1;
+  margin-left: 220px;
+  padding: 30px;
+}
+
+.home-main h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.system-status {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.system-status h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.system-status h2 span {
+  font-size: 16px;
+  color: #aaa;
+}

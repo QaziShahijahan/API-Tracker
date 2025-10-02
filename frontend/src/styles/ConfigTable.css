@@ -1,0 +1,38 @@
+.config-table {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-header, .table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 50px;
+  padding: 12px 20px;
+  align-items: center;
+}
+
+.table-header {
+  background: #3d5afe;
+  font-weight: bold;
+}
+
+.table-row {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.table-row:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+.menu-cell {
+  position: relative;
+}
+
+.dots-btn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,73 @@
+/* full-screen overlay */
+.config-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 100;
+}
+
+/* floating controls panel */
+.config-controls {
+  position: fixed;
+  right: 40px;
+  top: 80px;
+  width: 300px;
+  max-height: 80vh;       /* ✅ allow scroll if taller than viewport */
+  overflow-y: auto;       /* ✅ scrollable */
+  background: rgba(10,15,40,0.98);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  padding: 15px;
+  z-index: 101;
+}
+
+.controls-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #3d5afe;
+}
+
+.control-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.control-item label {
+  color: #ccc;
+}
+
+.time-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.controls-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.save-btn {
+  background: #3d5afe;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: transparent;
+  border: 1px solid #999;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #ccc;
+}

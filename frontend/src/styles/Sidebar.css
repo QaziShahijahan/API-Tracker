@@ -1,0 +1,55 @@
+.sidebar {
+  width: 220px;
+  background: #0b0f29;
+  color: white;
+  min-height: 100vh;
+  padding: 20px 15px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar-title {
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #bbb;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #aaa;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-link:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.menu-icon {
+  font-size: 18px;
+}
+
+/* Active NavLink */
+.menu-link.active {
+  background: #1e40af; /* Blue background */
+  color: #fff;        /* White text */
+}
+
+.menu-link.active .menu-icon {
+  color: #fff;
+}

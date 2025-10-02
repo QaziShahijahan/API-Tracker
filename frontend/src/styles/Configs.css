@@ -1,0 +1,23 @@
+.configs-container {
+  display: flex;
+  background: linear-gradient(180deg, #0f1a3a, #081122);
+  min-height: 100vh;
+  color: white;
+}
+
+.configs-main {
+  flex: 1;
+  margin-left: 220px;
+  padding: 30px;
+}
+
+.configs-main h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 50px;
+}

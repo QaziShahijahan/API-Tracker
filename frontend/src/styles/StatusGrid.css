@@ -1,0 +1,45 @@
+.status-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.api-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.api-name {
+  width: 120px;
+  font-weight: bold;
+  color: white;
+}
+
+.api-status {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.status-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* Status colors */
+.status-dot.green { background: #00c853; }
+.status-dot.red { background: #d50000; }
+.status-dot.orange { background: #ff9100; }
+.status-dot.yellow { background: #ffea00; }
+
+.api-indicator {
+  margin-left: auto;
+  font-size: 18px;
+}
+
+.tick { color: #00c853; }
+.cross { color: #d50000; }
