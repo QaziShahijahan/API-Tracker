@@ -32,5 +32,67 @@ Frontend: React (Vite), Axios, Recharts, React Router
 Backend: Node.js, Express.js, Mongoose
 Database: MongoDB Atlas
 Hosting: Render (Static site + Web Service)
-
 Auth: API Key Middleware
+
+📂 Project Structure :-
+tracer-app/
+  frontend/           # React + Vite app
+    src/
+    package.json
+  backend/            # Node/Express API
+    src/
+      models/
+      routes/
+      middleware/
+      config/
+    package.json
+  .gitignore
+  README.md
+
+⚙️ Local Setup :-
+1. Clone Repo
+git clone https://github.com/<your-username>/tracer-app.git
+cd tracer-app
+
+2. Backend Setup
+cd backend
+npm install
+
+3.Create .env inside backend/ :-
+PORT=4000
+MONGODB_URI=<your-mongo-atlas-uri>
+TRACER_API_KEY=<your-api-key>
+ALLOWED_ORIGINS=http://localhost:5173
+NODE_ENV=development
+
+4.Start backend :-
+npm run dev
+
+5. Frontend Setup :-
+cd ../frontend
+npm install
+
+6.Create .env.local inside frontend/ :-
+VITE_API_BASE=http://localhost:4000/api
+
+7.Start frontend :-
+npm run dev
+
+
+🔗 API Endpoints :-
+
+1.Configs:-
+GET /api/configs → list configs
+POST /api/configs → add config
+PUT /api/configs/:id → update config
+DELETE /api/configs/:id → delete config
+
+2.Keys :-
+GET /api/keys → list keys
+POST /api/keys → add new API key
+
+3.Tracer :-
+POST /api/tracer/log → add tracer log (requires x-api-key)
+GET /api/tracer/logs → get logs (supports filters: apiName, from, to, pagination)
+GET /api/tracer/stats → aggregated stats (uptime %, avg response time, errors, etc.)
+  
